@@ -13,7 +13,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          yarn install
+          npm install
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -24,4 +24,4 @@ jobs:
 
       - name: Deploy Next.js app
         run: |
-          yarn deploy
+          npm run deploy
